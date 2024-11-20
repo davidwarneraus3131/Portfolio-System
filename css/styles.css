@@ -1,0 +1,28 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Custom Styles */
+
+/* Set the body background with a linear gradient */
+body {
+    
+    font-family: 'Arial', sans-serif; /* Professional font style */
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-image: linear-gradient(to right, #3b5757, #020d1b); /* Gradient from blue-900 to gray-800 */
+    padding: 1rem; /* Equivalent to p-4 in Tailwind (1rem = 16px) */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow equivalent to shadow-lg */
+    color:rgb(193 193 193);
+
+}
+
+
+
+
+
+
+
