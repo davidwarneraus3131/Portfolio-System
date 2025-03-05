@@ -15,10 +15,10 @@ if (session_status() == PHP_SESSION_NONE) {
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flaticon/3.0.1/font/flaticon.css">
 <link rel="stylesheet" href="../css/styles.css">
 
-<title>SRIDHAR-PORTFOLIO</title>
+<title>SRIDHAR'S-PORTFOLIO</title>
 
 <!-- Favicon -->
-<link rel="icon" href="https://teckspiral.com/moores/storage/app/public/shop/2024-06-02-665c438ca5bb6.webp" type="image/png">
+<link rel="icon" href="https://saphotel.in/test/demo_files/admin/sri_logo.jpg" type="image/png">
 
 <style>
   .heading{
@@ -32,7 +32,7 @@ if (session_status() == PHP_SESSION_NONE) {
   <div class="container mx-auto flex justify-between items-center">
     <!-- Logo Section with Gradient Text Animation -->
     <a href="../index.php" class="flex items-center space-x-2">
-      <img src="https://teckspiral.com/moores/storage/app/public/shop/2024-06-02-665c438ca5bb6.webp" alt="Logo" class="w-10 h-10 rounded-full transition-transform duration-300 hover:rotate-6"> <!-- Logo Image -->
+      <img src="https://saphotel.in/test/demo_files/admin/sri_logo.jpg" alt="Logo" class="w-10 h-10 rounded-full transition-transform duration-300 hover:rotate-6"> <!-- Logo Image -->
       <span class="text-1xl font-extrabold gradient-text tracking-wide heading">TeckSpiral</span>
     </a>
     
@@ -49,6 +49,14 @@ if (session_status() == PHP_SESSION_NONE) {
       } else {
           echo '<li><a href="dashboard.php" class="nav-link"> Templates</a></li>';
           echo '<li><a href="my_templates.php" class="nav-link">My Templates</a></li>';
+          echo '<li>
+    <a href="ats_checker.php" class="nav-link-mobile relative group">
+         Resume Check(ATS)<br> 
+       <span class="absolute left-0 mt-1 w-64 px-3 py-2 text-xs text-white bg-gray-800 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Upload & Analyze Your Resume for ATS Compatibility! Get instant feedback on formatting, keywords, and missing skills to boost your job success!
+        </span>
+    </a>
+</li>';
           echo '<li><a href="contact.php" class="nav-link">Contact Us</a></li>';
           echo '<li><a href="../logout.php" class="nav-link">Logout</a></li>';
       }
@@ -84,6 +92,14 @@ if (session_status() == PHP_SESSION_NONE) {
     } else {
         echo '<li><a href="dashboard.php" class="nav-link-mobile">Templates</a></li>';
         echo '<li><a href="my_templates.php" class="nav-link-mobile">My Templates</a></li>';
+        echo '<li>
+    <a href="ats_checker.php" class="nav-link-mobile relative group">
+        Resume Check(ATS) <br> 
+        <span class="absolute left-0 mt-1 w-max px-2 py-1 text-xs text-white bg-gray-800 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+            Upload & Analyze Your Resume for ATS Compatibility!
+        </span>
+    </a>
+</li>';
         echo '<li><a href="contact.php" class="nav-link-mobile">Contact Us</a></li>';
         echo '<li><a href="../logout.php" class="nav-link-mobile">Logout</a></li>';
     }

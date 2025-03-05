@@ -1,3 +1,16 @@
+<?php
+session_start(); // Start session at the top
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
+    header("Location: ../index.php");
+    exit();
+}
+
+// Include necessary files
+include('../includes/header.php');
+include("../database/db.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +24,8 @@
 
   <!-- PHP Database Connection and Data Fetching -->
   <?php
- 
-session_start();
-include("../database/db.php");
 
-if ($_SESSION['role'] !== 'admin') {
-    header("Location: ../index.php");
-    exit();
-}
 
-include('../includes/header.php');
 
     // Fetch total users
     $totalUsers = $conn->query("SELECT COUNT(*) as count FROM users")->fetch_assoc()['count'];
