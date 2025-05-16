@@ -182,3 +182,27 @@ if (session_status() == PHP_SESSION_NONE) {
     document.getElementById('mobileMenu').classList.toggle('hidden');
   });
 </script>
+
+
+
+<!-- live chat options  for students -->
+ <!--Start of Tawk.to Script-->
+ <?php
+ // Check if the user is logged in
+if(isset($_SESSION['user_id'])) { 
+?>
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/67ce7a57ec6c18190fe22067/1ilv8rpgl';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+<?php 
+} 
+?>
+<!--End of Tawk.to Script-->
