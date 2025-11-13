@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_email'])) {
     <body>
     <div class='container'>
         <div class='logo'>
-            <img src='https://teckspiral.com/moores/storage/app/public/shop/2024-06-02-665c438ca5bb6.webp' alt='TeckSpiral' style='width: 150px;'>
+            <img src='https://teckspiral.com/moores/storage/app/public/shop/2024-06-02-665c438ca5bb6.webp' alt='Showbase' style='width: 150px;'>
         </div>
         <h2>🌟 Your Portfolio is Ready! 🌟</h2>
         <p>Dear $username,</p>
@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['send_email'])) {
         <p>We invite you to review your work using the link below:</p>
         <p><a href='$portfolio_link' style='color: #1d4ed8; font-weight: bold;'>View Your Portfolio</a></p>
         <p>Thank you for trusting us with your project! If you have any questions or need further assistance, feel free to reach out.</p>
-        <p>Best regards,<br>TeckSpiral</p>
+        <p>Best regards,<br>Showbase</p>
     </div>
     </body>
     </html>";
